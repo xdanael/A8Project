@@ -1,0 +1,46 @@
+<div [@routerTransition]>
+ 
+    <div class="row">  
+        <div class="col-xl-3 col-lg-6" ><!-- VECCHIA GESTIONE div class="col-xl-3 col-lg-6" (click)="onClick('1')" -->
+            <!-- <app-stat [bgClass]="'warning'" [icon]="'fa-lightbulb-o'"  [label]="'LA MISSION'"></app-stat> -->
+            <app-stat [bgClass]="'warning'" [slide]="'1'" (sliderClick)="onSliderClick($event)"  [icon]="'idea'"  [label]="'LA MISSION'"></app-stat>
+        </div>
+        <div class="col-xl-3 col-lg-6" >
+            <!-- <app-stat [bgClass]="'danger'" [icon]="'fa-pencil-square-o'"  [label]="'IL RATING'"></app-stat> -->
+            <app-stat [bgClass]="'danger'" [slide]="'2'" (sliderClick)="onSliderClick($event)" [icon]="'todo'"  [label]="'IL RATING'"></app-stat>
+         </div>
+         <div class="col-xl-3 col-lg-6"  >
+           <!--  <app-stat [bgClass]="'primary'" [icon]="'fa-cogs'"  [label]="'SERVIZI E PRICING'"></app-stat> -->
+             <app-stat [bgClass]="'primary'" [slide]="'3'" (sliderClick)="onSliderClick($event)" [icon]="'doing'"  [label]="'SERVIZI E PRICING'"></app-stat>
+         </div>
+         <div class="col-xl-3 col-lg-6" >
+           <!--  <app-stat [bgClass]="'success'" [icon]="'fa-check'" [label]="'SERVIZI SACE'"></app-stat> -->
+             <app-stat [bgClass]="'success'" [slide]="'4'" (sliderClick)="onSliderClick($event)" [icon]="'done'" [label]="'SERVIZI SACE'"></app-stat>
+         </div>
+     </div>
+
+     <div class="row">
+         <div class="col-md-12">
+             <ngb-carousel
+                     [showNavigationArrows]="false"
+                     [showNavigationIndicators]="true"
+                     interval="10000"
+                     [keyboard]="true"
+                     [pauseOnHover]="true"
+                     [wrap]="true"
+                     [activeId]="'slideTwo'">
+                 <ng-template ngbSlide *ngFor="let slider of sliders">
+                     <img class="img-fluid mx-auto d-block" [src]="slider.imagePath" alt="Random first slide" width="100%">
+                     <div class="carousel-caption">
+                         <h3>{{slider.label}}</h3>
+                         <p>{{slider.text}}</p>
+                     </div>
+                 </ng-template>
+             </ngb-carousel>
+         </div>
+     </div>
+     <br>
+
+
+
+ </div>

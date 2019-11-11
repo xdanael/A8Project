@@ -1,0 +1,47 @@
+
+<nav class="sidebar" [ngClass]="{sidebarPushRight: isActive, collapsed: collapsed}">
+    <div class="list-group" *ngFor="let menuitem of menuService.getAll(); index as i ">
+
+        <a *ngIf="menuitem.children?.length <= 0" routerLink="{{menuitem.link}}" [routerLinkActive]="['router-link-active']" class="list-group-item"  (click)="addExpandClass( menuitem.expandClass )">
+            <i class="fa {{menuitem.icon}} fa-lg"></i>&nbsp;
+            <span>{{  menuitem.title | translate }}</span>
+        </a>
+
+        <div *ngIf="menuitem.children?.length > 0" class="nested-menu">
+            <a class="list-group-item" (click)="addExpandClass( menuitem.expandClass)">
+                <i class="fa {{menuitem.icon}} fa-lg"></i>
+                <span>{{  menuitem.title  | translate }}</span>
+                <i class="fa fa-chevron-down d-flex float-right"></i>
+            </a>
+            <li class="nested" [class.expand]="showMenu === menuitem.expandClass">
+                <ul class="submenu">
+                    <li *ngFor="let subMenu of  menuitem.children">
+                        <a routerLink="{{subMenu.sublink}}" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                            <span>{{  subMenu.subtitle | translate }}</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </div>
+
+
+        <!--
+        <a routerLink="/dashboard" [routerLinkActive]="['router-link-active']" class="list-group-item"  (click)="addExpandClass('dashboard')">
+            <i class="fa fa-home fa-lg"></i>&nbsp;
+            <span>{{ 'Home' | translate }}</span>
+        </a>
+
+        <a routerLink="/admin-user" [routerLinkActive]="['router-link-active']" class="list-group-item"  (click)="addExpandClass('wiser')">
+            <i class="fa fa-users fa-lg"></i>&nbsp;
+            <span>{{ 'WISER.AMMINISTRAZIONE.USER_MANAGEMENT' | translate }}</span>
+        </a>
+        -->
+
+    </div>
+
+    <div class="toggle-button" [ngClass]="{collapsed: collapsed}" (click)="toggleCollapsed()">
+        <i class="fa fa-fw fa-angle-double-{{collapsed?'right':'left'}}"></i>&nbsp;
+        <span>{{ 'Collapse Sidebar' | translate }}</span>
+    </div>
+</nav>
+

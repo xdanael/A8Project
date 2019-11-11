@@ -1,0 +1,48 @@
+<!-- <div class="card-header"><h3>LISTA UTENTI</h3></div> -->
+<div class="card-body table-responsive">
+    <table class="table table-hover table-striped">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th [class.active]="order === 'lastname'"
+                (click)="setOrder('lastname')"
+                class="mdl-data-table__cell--non-numeric">
+                Nome
+                <span [hidden]="reverse">▼</span><span [hidden]="!reverse">▲</span>
+            </th>
+            <th>Email</th>
+            <th>Telefono</th>
+            <th>
+                Ruolo
+            </th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let user of users | orderBy: order:reverse:true | paginate:{itemsPerPage: 5, currentPage: currentPage}"
+            [class.active]="user === selectedUser">
+            <td><i class="fas fa-user-tie fa-3x"></i><span class="badge badge-light">{{user.id}}</span></td>
+            <td>{{user.name  | uppercase}} {{user.lastname  | uppercase}}</td>
+            <td>{{user.email  | uppercase}}</td>
+            <td>{{user.phone  | uppercase}}</td>
+            <td>admin</td>
+            <td>
+                <a [routerLink]="'/admin-user/detail'"
+                   class="btn btn-outline-secondary btn-lg btn-link" data-toggle="tooltip"
+                   data-placement="top" title="view"><i class="fa fa-eye" aria-hidden="true"></i></a>&nbsp;
+                <a [routerLink]="'#'"
+                   class="btn btn-outline-secondary btn-lg btn-link" data-toggle="tooltip"
+                   data-placement="top" title="edit"><i class="fa fa-edit"
+                                                        aria-hidden="true"></i></a>&nbsp;
+                <a [routerLink]="'#'"
+                   class="btn btn-outline-secondary btn-lg btn-link" data-toggle="tooltip"
+                   data-placement="top" title="cancel"><i class="fa fa-eraser"
+                                                          aria-hidden="true"></i></a>
+            </td>
+        </tr>
+        </tbody>
+        <pagination-controls (pageChange)="currentPage=$event"></pagination-controls>
+    </table>
+</div>
+
+

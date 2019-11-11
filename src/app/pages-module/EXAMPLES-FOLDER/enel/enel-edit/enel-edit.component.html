@@ -1,0 +1,87 @@
+<div class="card">
+    <br>
+    <div class="header">
+        <div class="row">
+            <div class="col-xl-12" *ngIf="checkCU === 'C'">
+                <h2><p class="text-center font-weight-bold">INSERISCI AZIENDA </p></h2>
+            </div>
+            <div class="col-xl-12" *ngIf="checkCU === 'U'">
+                <h2><p class="text-center font-weight-bold">MODIFICA AZIENDA </p></h2>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="content">
+
+        <p *ngIf="errors">{{ errors }}</p>
+
+        <form *ngIf="enel">
+           <!--
+            <div class="form-template-group">
+                <label>Id:</label>
+                {{enel.id || 'n/a'}} <input [(ngModel)]="enel.id" name="id" class="form-template-control">
+            </div>
+            -->
+
+            <div class="form-group">
+                <label>companyName:</label>
+                <input [(ngModel)]="companyInfo.companyName" name="companyName" class="form-control">
+            </div>
+
+
+            <div class="form-group">
+                <label>registeredNumber:</label>
+                <input [(ngModel)]="companyInfo.registeredNumber" name="registeredNumber" class="form-control">
+            </div>
+
+
+            <div class="form-group">
+                <label>legalForm:</label>
+                <input [(ngModel)]="companyInfo.legalForm" name="legalForm" class="form-control">
+            </div>
+
+
+            <div class="form-group">
+                <label>dateIncorporated:</label>
+                <input [(ngModel)]="companyInfo.dateIncorporated" name="dateIncorporated" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label>registeredOffices:</label>
+                <input [(ngModel)]="companyInfo.registeredOffices" name="registeredOffices" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label>telephonenumber:</label>
+                <input [(ngModel)]="companyInfo.telephonenumber" name="telephonenumber" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label>industryType:</label>
+                <input [(ngModel)]="companyInfo.industryType" name="industryType" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label>website:</label>
+                <input [(ngModel)]="companyInfo.website" name="website" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label>emailAddress:</label>
+                <input [(ngModel)]="companyInfo.emailAddress" name="emailAddress" class="form-control">
+            </div>
+
+
+            <div class="form-group">
+                <a (click)="goBack()" class="btn btn-outline-dark btn-lg" data-toggle="tooltip" data-placement="top" title="Indietro"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></a>&nbsp;
+                <button (click)="save()" *ngIf="checkCU === 'C'" class="btn btn-outline-dark btn-lg" data-toggle="tooltip" data-placement="top" title="Salva"><i class="fa fa-floppy-o" aria-hidden="true"></i></button>
+                <button (click)="update()" *ngIf="checkCU === 'U'" class="btn btn-outline-dark btn-lg" data-toggle="tooltip" data-placement="top" title="Modifica"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+            </div>
+
+
+
+
+        </form>
+
+    </div>
+</div>

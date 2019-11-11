@@ -1,0 +1,63 @@
+<div [@routerTransition]>
+    <!-- <i class="fa fa-chevron-circle-left" style="color:#242e3e"><a href="Javascript:void(0)" [routerLink]="" (click)="goBack()"> Indietro</a></i>  -->
+    <div class="col-sm-12">
+        <app-page-header [prevHeading]="'RICERCA AZIENDA'" [prevRoute]="'/wfc-r'" [heading]="'DETTAGLIO AZIENDA'"
+            [icon]="'fa fa-file-text-o'"></app-page-header>
+        <!--ANALISI BILANCIO E PERFORMANCE --->
+        <div class="row mt-3">
+            <div class="col-sm-12">
+                <div class="card">
+                <!--  <div class="card-header">ANALISI</div> -->  
+                    <div class="card-body">
+                        <ngb-tabset type="pills"  [orientation]="currentOrientation">
+                            <ngb-tab>
+                                <ng-template ngbTabTitle><span class="tab-title" (click)="showTab1()">ANALISI DI  BILANCIO E PERFORMANCE </span><span class="badge badge-info">{{model.companyInfo.analisibilperf}}</span></ng-template>
+                                <ng-template ngbTabContent *ngIf="tab1IsVisible">
+                                    <app-bilancio></app-bilancio>
+                                </ng-template>
+                            </ngb-tab>
+                            <!-- BILANCIO E PERFORMANCE --->
+
+                            <!-- ANALISI DELLA SOSTENIBILITA--->        
+                            <ngb-tab>
+                                <ng-template ngbTabTitle><span class="tab-title">ANALISI DELLA SOSTENIBILITA </span><span class="badge badge-info">{{model.companyInfo.analisisostenib}}</span></ng-template>
+                                <ng-template ngbTabContent>
+                                    <app-sostenibilita></app-sostenibilita>
+                                </ng-template>
+                            </ngb-tab>
+                            <!-- ANALISI DELLA SOSTENIBILITA---> 
+                            <!-- ANALISI ASSETTO MANAGERIALE---> 
+                            <ngb-tab>
+                                <ng-template ngbTabTitle><span class="tab-title">ANALISI ASSETTO MANAGERIALE </span><span class="badge badge-info">{{model.companyInfo.analisiasseman}}</span></ng-template>
+                                <ng-template ngbTabContent>
+                                    <app-assetto-manageriale></app-assetto-manageriale>
+                                </ng-template>
+                            </ngb-tab>
+                            <!-- ANALISI ASSETTO MANAGERIALE--->
+                            <!-- ANALISI SICUREZZA E CERTIFICAZIONI---> 
+                            <ngb-tab>
+                                <ng-template ngbTabTitle><span class="tab-title">ANALISI SICUREZZA E CERTIFICAZIONI </span><span class="badge badge-info">{{model.companyInfo.analisisiccert}}</span></ng-template>
+                                <ng-template ngbTabContent>
+                                    <app-certificazioni [company_name]="model.companyInfo.company_name"></app-certificazioni>
+                                </ng-template>
+                            </ngb-tab>
+                             <!-- ANALISI SICUREZZA E CERTIFICAZIONI--->
+                            <!-- DIGITALIZZAZIONE ED INNOVAZIONE-->
+                            <ngb-tab>
+                                <ng-template ngbTabTitle>
+                                    <span class="tab-title">DIGITALIZZAZIONE ED INNOVAZIONE </span><span class="badge badge-info">{{model.companyInfo.digitalinnov}}</span>
+                                   <!-- <button type="button" class="btn btn-primary">DIGITALIZZAZIONE ED INNOVAZIONE<span class="badge badge-info">4</span></button> -->
+                                </ng-template>
+                                <ng-template ngbTabContent>
+                                    <app-innovazione></app-innovazione>
+                                </ng-template>
+                            </ngb-tab>
+                        <!-- DIGITALIZZAZIONE ED INNOVAZIONE-->
+                        </ngb-tabset>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

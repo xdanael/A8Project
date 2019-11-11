@@ -1,0 +1,12 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+    <formly-form [model]="model" [fields]="fields" [options]="options" [form]="form"></formly-form>
+    <div class="pull-right">
+        <button type="submit" class="btn btn-outline-secondary btn-lg btn-link" [disabled]="!form.valid">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-outline-secondary btn-lg btn-link" (click)="resetModel()">
+            <i class="fa fa-eraser"  aria-hidden="true"></i></button>
+    </div>
+</form>
+
+

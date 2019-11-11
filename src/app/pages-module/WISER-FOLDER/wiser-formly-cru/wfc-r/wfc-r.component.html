@@ -1,0 +1,64 @@
+<div [@routerTransition]>
+    <div class="col-sm-12">
+        <app-page-header [heading]="'RICERCA AZIENDA'" [icon]="'fa fa-search'"></app-page-header>
+        <div class="card">
+            <div class="card-body">
+                <form [formGroup]="form" (ngSubmit)="submit()">
+                    <formly-form [model]="model" [fields]="fields" [options]="options" [form]="form"></formly-form>
+                    <div class="pull-right">
+                        <button type="submit" class="btn btn-primary submit-button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-danger" (click)="resetModel()"><i class="fa fa-eraser" aria-hidden="true"></i></button>
+                    </div>
+                </form>
+                <br>
+                <div *ngIf="enelList.length > 0">
+                    <hr>
+
+                    <div class="card mb-3">
+                        <div class="card-header">LISTA AZIENDE</div>
+
+                        <div class="card-body table-responsive">
+                            <table class="table table-hover table-striped">
+                                <thead>
+                                <tr>
+                                    <th>Company Name</th>
+                                    <th>Legal Form</th>
+                                    <th>Email Address</th>
+                                    <th>Total Rating</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr *ngFor="let item of enelList | paginate:{itemsPerPage: 3, currentPage: p}" [class.active]="item === selectedEnel">
+                                    <td>{{item.companyInfo.company_name  | uppercase}}</td>
+                               <!--     <td>{{item.companyInfo.vat_number}}</td>  -->
+                                    <td>{{item.companyInfo.legalForm}}</td>
+                                    <td>{{item.companyInfo.email}}</td>
+                                    <td>{{item.companyInfo.totalRating}}</td>
+                                    <td><!-- diretto al  dettaglio /wfc-cu-->
+                                        <a [routerLink]="['/wfc-cu']" [state]="item"
+                                           class="btn btn-outline-secondary btn-lg btn-link" data-toggle="tooltip"
+                                           data-placement="top" title="view"><i class="fa fa-eye"
+                                                                                aria-hidden="true"></i></a>&nbsp;
+                                    </td>
+                                </tr>
+                                <pagination-controls (pageChange)="p=$event"></pagination-controls>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div *ngIf="enelList.length <= 0">
+                    <br><br>
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <strong>Attenzione!</strong> Il criterio di ricerca non ha prodotto risultati
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>

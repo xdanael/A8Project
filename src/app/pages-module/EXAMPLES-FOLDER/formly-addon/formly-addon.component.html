@@ -1,0 +1,8 @@
+<div [@routerTransition]>
+     <app-page-header [heading]="'@ngx-formly Configurato'" [icon]="'fa fa-file-text-o'"></app-page-header>
+    <form [formGroup]="orderForm" (ngSubmit)="onSubmit(order)">
+        <formly-form [model]="order" [fields]="orderFields">
+            <button type="submit" class="btn btn-primary submit-button">Submit</button>
+        </formly-form>
+    </form>
+</div>

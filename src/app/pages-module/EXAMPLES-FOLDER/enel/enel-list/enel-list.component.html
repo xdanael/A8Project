@@ -1,0 +1,56 @@
+<div [@routerTransition]>
+    <div>
+        <app-page-header [heading]="'Wiserfunding'" [icon]="'fa-edit'"></app-page-header>
+
+
+        <div class="ui raised segment">
+            <form #f="ngForm">
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label>companyName:</label>
+                        <input [(ngModel)]="filter.companyName" name="companyName" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <button (click)="search()" [disabled]="!f?.valid" class="btn btn-secondary">
+                            Search
+                        </button>
+                        <button [routerLink]="['../enel','new']" class="btn btn-secondary">
+                            New
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <div class="card" *ngIf="enelList.length > 0">
+
+        <table class="table table-contensed">
+            <thead>
+            <tr>
+                <th>companyName</th>
+                <th>registeredNumber</th>
+                <th>legalForm</th>
+                <th>emailAddress</th>
+            </tr>
+            </thead>
+            <tr *ngFor="let item of enelList" [class.active]="item === selectedEnel">
+                <td>{{item.companyInfo.companyName}}</td>
+                <td>{{item.companyInfo.registeredNumber}}</td>
+                <td>{{item.companyInfo.legalForm}}</td>
+                <td>{{item.companyInfo.emailAddress}}</td>
+                <td>
+                    <a [routerLink]="['../enel',item.id]" class="btn btn-outline-secondary btn-xs" data-toggle="tooltip"
+                       data-placement="top" title="Modifica"><i class="fa fa-pencil" aria-hidden="true"></i></a>&nbsp;
+                    <a (click)="delete(item)" class="btn btn-outline-danger btn-xs" data-toggle="tooltip"
+                       data-placement="top" title="Elimina"><i class="fa fa-minus" aria-hidden="true"></i></a>
+
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</div>

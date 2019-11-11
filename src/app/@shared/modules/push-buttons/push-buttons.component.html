@@ -1,0 +1,12 @@
+    <div class="row">
+        <div class="col-xl-12">
+            <ngx-fab *ngIf="back" [position]="'top-right'" [additionalX]="+120" [additionalY]="-70" [backgroundColor]="'#bd0e00'"
+                     [fabSize]="'small'" [iconClass]="'fa fa-chevron-circle-left'" [routerLink]="[back]"></ngx-fab>
+            <ngx-fab [position]="'top-right'" [additionalX]="+70" [additionalY]="-70"  [backgroundColor]="'#0f8986'" [fabSize]="'small'"
+                     [routerLink]="[route]"></ngx-fab>
+            <ngx-fab [position]="'top-right'" [additionalX]="+20" [additionalY]="-70"  [backgroundColor]="'#70896b'" [fabSize]="'small'"
+                     [iconClass]="'fas fa-print'" onclick="print();"></ngx-fab>
+        </div>
+    </div>
+
+

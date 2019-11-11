@@ -1,0 +1,436 @@
+
+{
+  "Dashboard": "Dashboard",
+  "Home": "Home",
+  "Home2": "Home",
+  "Login": "Login",
+  "Charts": "Grafici",
+  "Tables": "Tabelle",
+  "Bootstrap Element": "Elementi Bootstrap",
+  "Bootstrap Grid": "Griglia Bootstrap",
+  "Component": "Componenti",
+  "Menu": "Menu",
+  "Submenu": "Submenu",
+  "Blank Page": "Pagina Bianca",
+  "More Theme": "Altri temi",
+  "Download Now": "Scarica Adesso",
+  "Language": "Lingua",
+  "English": "Inglese",
+  "French": "Francese",
+  "Spanish": "Spagnolo",
+  "Italian": "Italiano",
+  "German": "Tedesco",
+  "Search": "Ricerca",
+  "Settings": "Impostazioni",
+  "Profile": "Profilo",
+  "Inbox": "Posta in arrivo",
+  "Log Out": "Uscire",
+  "Pending Task": "Attività in sospeso",
+  "In queue": "In coda",
+  "Mail": "Posta",
+  "View All": "Visualizza tutti",
+  "Collapse Sidebar": "",
+  "Full Name": "Nome Completo",
+  "Email": "Posta Elettronica",
+  "Password": "Password",
+  "Repeat Password": "Ripetere la password",
+  "Register": "Registrarsi",
+  "Log in": "Entrare",
+  "Wiserfunding": "Wiserfunding",
+  "WiserFormly": "WiserFormly",
+  "WiserCrud": "WiserCrud",
+  "Testing": "Test con Pipe",
+  "dfb": "Dynamic form No Fw",
+  "df-ng-switch": "DynamicF df-ng-switch",
+  "ui-ng-bootstrap": "ng-dynamic-forms",
+  "FormsEx": "Forms examples",
+  "Examples": "Componenti Esempio",
+  "formly": "NGX-Formly",
+  "Forms": "Forms",
+  "reactiveForms": "ReactF Validation",
+  "formly-addon": "Formly",
+  "mat-tab": "mat-tab",
+  "mat-step": "mat-step",
+  "wiser-full": "WISER-FULL",
+  "WISER": {
+    "WISERMANAGEMENT": "VENDOR RATING",
+    "WISERFUNDING": "WISER",
+    "WISERFORMLY": "WISER-FORMLY",
+    "WISERCRUD": "WISER-CRUD",
+    "WISERCRUD_FORMLY": "WISER FORMLY V2",
+    "INSERIMENTO": "INSERIMENTO",
+    "RICERCA": "RICERCA",
+    "DETTAGLIO": "DETTAGLIO",
+    "AMMINISTRAZIONE": {
+      "USER_MANAGEMENT": "Gestione Utente"
+    },
+    "LABEL": {
+      "COMPANY_NAME": "NOME DELL AZIENDA",
+      "CORPORATE_GOVERNANCE": "CORPORATE GOVERNANCE",
+      "RISK_METRICS": "RISK METRICS",
+      "FINANCIAL_METRICS" : "FINANCIAL METRICS"
+    },
+    "COMPANY_INFO": {
+      "COMPANY_NAME": {
+        "LABEL": "NOME DELL AZIENDA",
+        "PLACE_HOLDER": "Inserire il nome dell'Azienda"
+      },
+      "CITY": {
+        "LABEL": "CITTA",
+        "PLACE_HOLDER": "Inserire la Città"
+      },
+      "REGISTRATION_NUMBER": {
+        "LABEL": "P.IVA",
+        "PLACE_HOLDER": "Inserire la P.IVA"
+      },
+      "LEGAL_FORM": {
+        "LABEL": "FORMA LEGALE",
+        "PLACE_HOLDER": "Inserire il tipo di azienda"
+      },
+      "DATE": {
+        "LABEL": "ULTIMA DATA INSERIMENTO",
+        "PLACE_HOLDER": "Inserire la data di registrazione"
+      },
+      "CATEGORY": {
+        "LABEL": "CATEGORIA",
+        "PLACE_HOLDER": "Inserisci la categoria"
+      },
+      "ADDRESS": {
+        "LABEL": "INDIRIZZO",
+        "PLACE_HOLDER": "Inserire l indirizzo"
+      },
+      "TELEPHONE": {
+        "LABEL": "TELEFONO",
+        "PLACE_HOLDER": "Inserire il telefono"
+      },
+      "DATE_OF_ANNEXATION": {
+        "LABEL": "DATA ANNESSIONE",
+        "PLACE_HOLDER": "Inserisci l anno"
+      },
+      "TYPE": {
+        "LABEL": "TIPO",
+        "PLACE_HOLDER": "Inserisci il tipo"
+      },
+      "ISO": {
+        "LABEL": "ISO",
+        "PLACE_HOLDER": "Inserisci l'iso"
+
+      },
+      "YEAR": {
+        "LABEL": "YEAR",
+        "PLACE_HOLDER": "Inserisci l'anno"
+      },
+      "POSTCODE": {
+        "LABEL": "CODICE POSTALE",
+        "PLACE_HOLDER": "Codice postale"
+      },
+      "NACE_NAME": {
+        "LABEL": "CLASSIFICAZIONE NACE",
+        "PLACE_HOLDER": "Inserisci la nace"
+      },
+      "NACE_CODE": {
+        "LABEL": "CODICE NACE",
+        "PLACE_HOLDER": "Inserisci il codice nace"
+      },
+      "SITE": {
+        "LABEL": "SITO",
+        "PLACE_HOLDER": "Inserire il sito web"
+      },
+      "EMAIL": {
+        "LABEL": "E-MAIL",
+        "PLACE_HOLDER": "Inserire la mail"
+      }
+    },
+
+    "RISK_METRICS": {
+      "BOND": {
+        "LABEL": "BOND",
+        "PLACE_HOLDER": "Inserire il Rating sui bond"
+      },
+      "SMEZ": {
+        "LABEL": "SMEZ",
+        "PLACE_HOLDER": "Inserire il SMEZscore"
+      },
+      "LOSS_GIVEN_DEFAULT": {
+        "LABEL": "LOSS GIVEN DEF.",
+        "PLACE_HOLDER": "loss Given Default"
+      },
+      "DEFAULT_PROBABILITY": {
+        "LABEL": "DEF. PROBABILITY",
+        "PLACE_HOLDER": "Inserire il probabilityofDefault"
+      },
+      "Z_SCORE_BAND": {
+        "LABEL": "Z SCORE BAND",
+        "PLACE_HOLDER": "Inserire il zscoreBand"
+      },
+      "BENCHMARK_SCORE": {
+        "LABEL": "BENCHMARK SCORE",
+        "PLACE_HOLDER": "Inserire il benchmarkScore"
+      },
+      "BOND_RATING_EQ": {
+        "LABEL": "BOND RATING EQ.",
+        "PLACE_HOLDER": "Inserire il Rating sui bond"
+      }
+    },
+
+
+
+    "FINANCIAL_METRICS": {
+      "ID": {
+        "LABEL": "ID",
+        "PLACE_HOLDER": "Inserire shareHoldingStructure"
+      },
+      "CREATED": {
+        "LABEL": "CREATED",
+        "PLACE_HOLDER": "E' stata creata"
+      },
+
+      "DEBT_EQUITY_RATIO": {
+        "LABEL": "DEBT EQUITY RATIO",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "NET_ASSETS_TURNOVER": {
+        "LABEL": "NET ASSET STURNOVER",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "CASH_TOTAL_ASSETS": {
+        "LABEL": "CASH TOTAL ASSETS",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "TURNOVER": {
+        "LABEL": "TURNOVER",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "EBIT": {
+        "LABEL": "EBIT",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "EBITDA": {
+        "LABEL": "EBITDA",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "TOTAL_DEBT": {
+        "LABEL": "TOTAL DEBT",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "CASH_EQUIVALENTS": {
+        "LABEL": "CASH EQUIVALENTS",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "INTEREST_EXPENSE": {
+      "LABEL": "INTEREST EXPENSE",
+      "PLACE_HOLDER": "Inserire il Debt equity"
+    },
+      "SHARE_HOLDERS_EQUITY": {
+        "LABEL": "SHARE HOLDERS EQUITY",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "DAYS_RECEIVABLE": {
+        "LABEL": "DAYS RECEIVABLE",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "DAYS_PAYABLE": {
+        "LABEL": "DAYS PAYABLE",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "EBITDA_MARGIN": {
+        "LABEL": "EBITDA MARGIN",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "DEBT_TOTAL_ASSETS": {
+        "LABEL": "DEBT TOTAL ASSETS",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "LIQUIDITY_RATIO": {
+        "LABEL": "LIQUIDITY RATIO",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "CURRENT_RATIO": {
+        "LABEL": "CURRENT RATIO",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "ROE": {
+        "LABEL": "ROE",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "ROA": {
+        "LABEL": "ROA",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "EQUITY_TOTAL_ASSETS": {
+        "LABEL": "EQUITY TOTAL ASSETS",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "INTEREST_COVERAGE_RATIO": {
+        "LABEL": "INTEREST COVERAGE RATIO",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "INTEREST_COVER": {
+        "LABEL": "INTEREST COVER",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "INTEREST_EXPENSES": {
+        "LABEL": "INTEREST EXPENSES",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "NET_IN_COME": {
+        "LABEL": "NET INCOME",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "RETAIN_EDEARNINGS": {
+        "LABEL": "RETAIN EDEARNINGS",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "RETURN_ON_EQUITY": {
+        "LABEL": "RETURN ON EQUITY",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "RETURN_ON_ASSETS": {
+        "LABEL": "RETURN ON ASSETS",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "TOTAL_SHARE_HOLDER_EQUITY": {
+        "LABEL": "TOTAL SHARE HOLDER EQUITY",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "TOTAL_ASSETS": {
+        "LABEL": "TOTAL ASSETS",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "NON_CURRENT_LIABILITIES": {
+        "LABEL": "NON CURRENT LIABILITIES",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "INTANGIBLE_FIXED_ASSETS": {
+        "LABEL": "INTANGIBLE FIXED ASSETS",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "INTANGIBLE_TOTAL_ASSETS": {
+        "LABEL": "INTANGIBLE TOTAL ASSETS",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "TANGIBLE_FIXED_ASSETS": {
+        "LABEL": "TANGIBLE FIXED ASSETS",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "TANGIBLE_TOTAL_ASSETS": {
+        "LABEL": "TANGIBLE TOTAL ASSETS",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "OTHER_CURRENT_LIABILITIES": {
+        "LABEL": "OTHER CURRENT LIABILITIES",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "OTHER_NON_CURRENT_LIABILITIES": {
+        "LABEL": "OTHER NON CURRENT LIABILITIES",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "NET_CURRENT_ASSETS": {
+        "LABEL": "NET CURRENT ASSETS",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "NET_IN_COME_TOTAL_ASSETS": {
+        "LABEL": "NET INCOME TOTAL ASSETS",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "CREDITORS": {
+        "LABEL": "CREDITORS",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "DEBTORS": {
+        "LABEL": "DEBTORS",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "DEPRECIATION": {
+        "LABEL": "DEPRECIATION",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "CURRENT_ASSETS": {
+        "LABEL": "CURRENTASSETS",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "LN1_EBITDA_TOTAL_ASSETS": {
+        "LABEL": "LN 1 EBITDA TOTAL ASSETS",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "LN1_RETAIN_EDEARNINGS_TOTAL_ASSETS": {
+        "LABEL": "LN 1 RETAIN EDEARNINGS TOTAL ASSETS",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "LOANS": {
+        "LABEL": "LOANS",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "LONG_TERM_DEBT": {
+        "LABEL": "LONG TERM DEBT",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "SALES": {
+        "LABEL": "SALES",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "SHORT_TERM_DEBT": {
+        "LABEL": "SHORT TERM DEBT",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "SHORT_TERM_DEBT_TOTAL_DEBT": {
+        "LABEL": "SHORT TERM DEBT TOTAL DEBT",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "EBITDA_INTEREST_EXPENSES": {
+        "LABEL": "EBITDA INTEREST EXPENSES",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "FIXED_ASSETS": {
+        "LABEL": "FIXED ASSETS",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "OPERATING_REVENUE": {
+        "LABEL": "OPERATING REVENUE",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "GROSS_MARGIN": {
+        "LABEL": "GROSS MARGIN",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "WORKINGCAPITAL": {
+        "LABEL": "WORKING CAPITAL",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "WORKING_CAPITAL_TOTAL_ASSETS": {
+        "LABEL": "WORKING CAPITAL TOTAL ASSETS",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      },
+      "SUITE_TRACE": {
+        "LABEL": "SUITE TRACE",
+        "PLACE_HOLDER": "Inserire il Debt equity"
+      }
+  },
+
+
+
+
+    "CORPORATE_GOVERNANCE": {
+      "SHARE_HOLDING_STRUCTURE": {
+        "LABEL": "SHARE HOLDING STRUCTURE",
+        "PLACE_HOLDER": "Inserire shareHoldingStructure"
+      },
+      "NUMBER_OF_SUBSIDIARIES": {
+        "LABEL": "N. of SUBSIDIARIES",
+        "PLACE_HOLDER": "Inserire il noOfSubsidiaries"
+      },
+      "NUMBER_OF_DIRECTORS": {
+        "LABEL": "N. of DIRECTORS",
+        "PLACE_HOLDER": "Inserire il noOfDirectors"
+      },
+      "BOARD_MEMBERS": {
+        "LABEL": "BOARD MEMBERS",
+        "PLACE_HOLDER": "Inserire il boardMembers"
+      },
+      "NUMBERS_EMPOLYEES": {
+        "LABEL": "N. EMPLOYEES",
+        "PLACE_HOLDER": "Inserire il numberofEmployees"
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.field_set{
+  border: 1px #242e3e solid;
+}
+
+.form {
+  padding-left: 100px;
+}
+
+div {
+  padding: 8px;
+}
+
+::ng-deep .nav-fill .nav-link.active {
+  margin-top: -1px;
+  border-top: 2px solid #20a8d8;
+  color: yellow;
+}
+
+::ng-deep a {
+  color: #0e7c89;
+}
+
+::ng-deep a:hover {
+  color:  #15adbf;
+}
+
+::ng-deep .nav-pills a.nav-link.active,
+::ng-deep .nav-pills .show > a.nav-link {
+  color: #fff;
+  background-color: darken(#15adbf , 5%);
+}

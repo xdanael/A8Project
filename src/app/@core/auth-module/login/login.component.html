@@ -1,0 +1,49 @@
+<div class="login-page" [@routerTransition]>
+    <div class="row justify-content-md-center">
+        <div class="col-md-4">
+            <img src="assets/images/suite_logo_login.png" width="250px"/>
+            <form role="form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                    <div class="form-content">
+
+                            <div class="form-group">
+                                    <input type="text" formControlName="username" class="form-control input-underline input-lg" placeholder="User"  [ngClass]="{ 'is-invalid': submitted && f.username.errors }">
+                                    <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                                            <div *ngIf="f.username.errors.required">User è un campo obbligatorio</div>
+                                    </div>
+                            </div>
+                            <div class="form-group">
+                                    <input type="password" formControlName="password" class="form-control input-underline input-lg" placeholder="Password"  [ngClass]="{ 'is-invalid': submitted && f.password.errors }">
+                                    <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                                            <div *ngIf="f.password.errors.required">Password  è un campo obbligatorio</div>
+                                        </div>
+                            </div>
+
+                            <!--
+                            <div class="form-group">
+                                <input type="text" formControlName="username" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
+                                <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                                    <div *ngIf="f.username.errors.required">Username is required</div>
+                                </div>
+                            </div>  
+                            <div class="form-group">
+                                <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+                                <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                                    <div *ngIf="f.password.errors.required">Password is required</div>
+                                </div>
+                            </div>
+                            -->
+
+                            <div class="form-group">
+                                <button [disabled]="loading" class="btn btn-primary">Login</button>
+                            </div>
+
+                    </div>            
+
+            </form>
+            <div *ngIf="errorLogin" class="alert alert-danger">
+                    <strong>Attenzione!</strong> Le credenziali inserite sono errate!
+            </div>
+        </div>
+    </div>
+    
+</div>

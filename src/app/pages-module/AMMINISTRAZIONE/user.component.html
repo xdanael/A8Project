@@ -1,0 +1,15 @@
+<div [@routerTransition]>
+    <div class="col-sm-12">
+        <app-page-header [heading]="'GESTIONE UTENTE'" [icon]="'fa fa-users'" [route]="'/admin-user/'"
+                         [curr_page_heading]="'RICERCA'" [curr_page_icon]="'fa fa-search'"></app-page-header>
+        <div class="card">
+            <app-push-buttons [route]="'/admin-user/create'"></app-push-buttons>
+            <br>
+            <div class="card-body">
+                            <app-admin-user-search></app-admin-user-search>
+                            <br>
+                            <app-admin-user-list></app-admin-user-list>
+            </div>
+        </div>
+    </div>
+</div>

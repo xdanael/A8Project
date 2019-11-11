@@ -1,0 +1,105 @@
+import {Component, OnInit} from '@angular/core';
+import {FormGroup} from '@angular/forms';
+import {FormlyFormOptions, FormlyFieldConfig} from '@ngx-formly/core';
+import { routerTransition } from '../../@shared/animation/router.animations';
+
+import {OrderServiceMock} from '../../@shared/mocks/order.mock.service';
+import {SchemaService} from "./form-schema/schema.service";
+
+
+@Component({
+    selector: 'app-formly-addon',
+    templateUrl: './formly-addon.component.html',
+    styleUrls: ['./formly-addon.component.scss'],
+    animations: [routerTransition()]
+})
+export class FormlyAddonComponent implements OnInit {
+    ngOnInit() {}
+
+    constructor(private orderMock : OrderServiceMock, private schemaService: SchemaService) {}
+
+    orderForm = new FormGroup({});
+
+
+    //Mock Model
+     order: any = {
+        tagName: '',
+        color: 'powder-blue', // will default to this value
+        quantity: 1,
+        size: 'M',
+        terms: false
+    };
+
+    //Schema Form
+    orderFields: FormlyFieldConfig[] = [
+        {
+            key: 'tagName',
+            type: 'input', // input type
+            templateOptions: {
+                type: 'text',
+                label: 'Tag name for your outfit',
+                placeholder: 'tag name'
+            },
+            validation: {
+                messages: {
+                    maxLength: 'Tag name is too long'
+                }
+            },
+            validators: {
+                // limit to 25 characters
+                maxLength: ({ value }) => {
+                    return value.length <= 25;
+                }
+            }
+        },
+        {
+            key: 'color',
+            type: 'select',
+            templateOptions: {
+                label: 'Outfit color',
+                options: [
+                    { label: 'Powder blue', value: 'powder-blue' },
+                    { label: 'Orange crush', value: 'orange-crush' },
+                    { label: 'Purple haze', value: 'purple-haze' }
+                ]
+            }
+        },
+        {
+            key: 'quantity',
+            type: 'input',
+            templateOptions: {
+                type: 'number',
+                label: 'How many outfits?',
+                placeholder: 'quantity',
+                required: true
+            }
+        },
+        {
+            key: 'size',
+            type: 'select',
+            defaultValue: 'M',
+            templateOptions: {
+                label: 'Size',
+                options: [
+                    { label: 'Small', value: 'S' },
+                    { label: 'Medium', value: 'M' },
+                    { label: 'Large', value: 'L' }
+                ]
+            }
+        },
+        {
+            key: 'terms',
+            type: 'checkbox',
+            templateOptions: {
+                label: 'You accept our terms and conditions',
+                required: true
+            }
+        }
+    ];
+
+     onSubmit(orderInfo) {
+         alert(JSON.stringify(orderInfo));
+     }
+
+
+}

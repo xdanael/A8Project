@@ -1,0 +1,49 @@
+<!--
+<div class="row">
+    <div class="col-xl-12">
+        <button type="button" class="btn btn-color-oil btn-arrow-right"><i class="fa fa-home"></i><a
+                href="Javascript:void(0)" [routerLink]="['/dashboard']" style="color: beige"> HOME</a></button>
+
+        <button type="button" *ngIf="prevHeading" class="btn btn-color-oil btn-arrow-right"><i
+                class="fa fa-paragraph"></i><a href="Javascript:void(0)" [routerLink]="[prevRoute]"
+                                               style="color: beige"> {{prevHeading}}</a></button>
+
+        <button type="button" disabled class="btn btn-color-oil-light btn-arrow-right">
+            <strong><i class="fa fa-quote-left"></i>&nbsp;<i class="fa {{icon}}"> </i> {{heading}} <i
+                    class="fa fa-quote-right"></i></strong>
+        </button>
+
+        <button type="button" class="btn btn-color-opt-print float-right" onclick="print();"><i
+                class="fa fa-print fa-3x"></i></button>
+    </div>
+</div>
+-->
+
+<div class="row">
+    <div class="col-xl-12">
+        <!-- HOME -->
+        <button type="button" class="btn btn-color-oil btn-arrow-right"><i class="fa fa-home"></i>
+            <a href="Javascript:void(0)" [routerLink]="['/dashboard']" style="color: beige"> HOME</a></button>
+
+        <!-- FUNZIONALITA -->
+        <button type="button" class="btn btn-color-oil-light btn-arrow-right" [routerLink]="[route]">
+            <strong>
+                <i class="fa fa-quote-left"></i>&nbsp;
+                    <i class="fa {{icon}}"> </i> {{heading}}
+                <i class="fa fa-quote-right"></i>
+            </strong>
+        </button>
+
+        <!-- PAGINA CORRENTE DELLA FUNZIONALITA -->
+        <button type="button" disabled class="btn btn-info btn-arrow-right" style="color: #0f0f10">
+            <strong>
+                <i class="fa fa-quote-left"></i>&nbsp;
+                    <i class="fa {{curr_page_icon}}"> </i> {{curr_page_heading}}
+                <i class="fa fa-quote-right"></i>
+            </strong>
+        </button>
+
+
+    </div>
+</div>
+<br>

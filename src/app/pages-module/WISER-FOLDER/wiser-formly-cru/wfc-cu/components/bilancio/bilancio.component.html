@@ -1,0 +1,44 @@
+<br>
+<div class="card">
+    <p class="h2 text-center">ANALISI DI  BILANCIO E PERFORMANCE</p>
+    <div class="card-body">
+        <form [formGroup]="form" (ngSubmit)="submit()">
+            <mat-horizontal-stepper>
+                <mat-step
+                        *ngFor="let step of steps; let index = index; let last = last;">
+                    <ng-template matStepLabel>{{ step.label }}</ng-template>
+                    <formly-form [form]="form.at(index)" [model]="model"
+                                 [fields]="step.fields" [options]="options[index]">
+                    </formly-form>
+                    <div>
+                        <div class="pull-left" *ngIf="!isDisabled">
+                            <button *ngIf="index !== 0" matStepperPrevious
+                                    class="btn btn-default" type="button"
+                                    (click)="prevStep(index)"><i
+                                    class="fa fa-arrow-circle-left fa-2x"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                        <div class="pull-right">
+                            <button *ngIf="!last && !isDisabled" matStepperNext
+                                    class="btn btn-default" type="button"
+                                    [disabled]="!form.at(index).valid"
+                                    (click)="nextStep(index)"><i
+                                    class="fa fa-arrow-circle-right fa-2x"
+                                    aria-hidden="true"></i></button>
+                            <button *ngIf="last && !isDisabled"
+                                    class="btn btn-primary" [disabled]="!form.valid"
+                                    type="submit">
+                                Submit
+                            </button>
+                        </div>
+                        <br><br><br>
+                        <div *ngIf="last">
+                            <app-modal-charts></app-modal-charts>
+                        </div>
+                    </div>
+                </mat-step>
+            </mat-horizontal-stepper>
+        </form>
+    </div>
+</div>
+<!--/ DIV --->

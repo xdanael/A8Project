@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+@import "spinner";
+@import "utils";
+@import "rtl";
+@import "responsive";
+@import "scrollbar";
+@import "carousel";
+
+@import "style/suite";
+@import "~@progress/kendo-theme-bootstrap/scss/all";
+
+@import "~bootstrap/scss/bootstrap";
+@import '~bootstrap/scss/bootstrap.scss';
+
+@import "~mixins-sass/src/mixins";
+
+@media print {
+    .breadcrumb {
+        display: none !important;
+    }
+}

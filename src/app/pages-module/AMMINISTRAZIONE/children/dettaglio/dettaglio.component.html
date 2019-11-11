@@ -1,0 +1,11 @@
+<div [@routerTransition]>
+    <div class="col-sm-12">
+
+        <app-page-header [heading]="'GESTIONE UTENTE'" [icon]="'fa fa-users'" [route]="'/admin-user/'"
+                         [curr_page_heading]="'DETTAGLIO'" [curr_page_icon]="'fa fa-asterisk'"></app-page-header>
+        <div class="card">
+            <app-push-buttons [back]="'/admin-user'" [route]="'/admin-user/detail'"></app-push-buttons>
+            <br>
+        </div>
+    </div>
+</div>

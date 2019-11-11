@@ -1,0 +1,64 @@
+{
+  "title": "Enel",
+  "entity": "enel",
+  "api": {
+    "url": "http://localhost:8080/api/enel/"
+  },
+  "filter": [
+    "companyName"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "label": "Id",
+      "isId": true,
+      "readonly": true,
+      "type": "number"
+    },
+    {
+      "name":  "companyName",
+      "label": "companyName",
+      "type":  "string"
+    },
+    {
+      "name":  "registeredNumber",
+      "label": "registeredNumber",
+      "type":  "string"
+    },
+    {
+      "name":  "legalForm",
+      "label": "legalForm",
+      "type":  "string"
+    },
+    {
+      "name":  "dateIncorporated",
+      "label": "dateIncorporated",
+      "type":  "string"
+    },
+    {
+      "name":  "registeredOffices",
+      "label": "registeredOffices",
+      "type":  "string"
+    },
+    {
+      "name":  "telephonenumber",
+      "label": "telephonenumber",
+      "type":  "string"
+    },
+    {
+      "name":  "industryType",
+      "label": "industryType",
+      "type":  "string"
+    },
+    {
+      "name":  "website",
+      "label": "website",
+      "type":  "string"
+    },
+    {
+      "name":  "emailAddress",
+      "label": "emailAddress",
+      "type":  "string"
+    }
+  ]
+}

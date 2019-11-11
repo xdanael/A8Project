@@ -1,0 +1,58 @@
+<!-- TEST COMPONENTI FRAMEWORK
+        <div class="nested-menu">
+            <a class="list-group-item" (click)="addExpandClass('examples', true)">
+                <i class="fa fa-{{subcollapsed?'plus':'minus'}}"></i>&nbsp;
+                <span>{{ 'Examples' | translate }}</span>
+            </a>
+            <li class="nested" [class.expand]="showMenu === 'examples'">
+                <ul class="submenu">
+                    <li>
+                        <a [routerLink]="['/charts']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                            <i class="fa fa-fw fa-bar-chart-o"></i>&nbsp;
+                            <span>{{ 'Charts' | translate }}</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/forms']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                            <i class="fa fa-fw fa-edit"></i>&nbsp;
+                            <span>{{ 'Forms' | translate }}</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/tables']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                            <i class="fa fa-fw fa-table"></i>&nbsp;
+                            <span>{{ 'Tables' | translate }}</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/bs-element']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                            <i class="fa fa-fw fa-desktop"></i>&nbsp;
+                            <span>{{ 'Bootstrap Element' | translate }}</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/grid']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                            <i class="fa fa-fw fa-wrench"></i>&nbsp;
+                            <span>{{ 'Bootstrap Grid' | translate }}</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/components']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                            <i class="fa fa-th-list"></i>&nbsp;
+                            <span>{{ 'Component' | translate }}</span>
+                        </a>
+                    </li>
+
+                    <li class="nested" [class.expand]="showMenu === 'wiser'">
+                        <ul class="submenu">
+                            <li>
+                                <a routerLink="/wfc-r" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                                    <span>{{ 'WISER.RICERCA' | translate }}</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </div>
+        -->
