@@ -69,7 +69,7 @@
     "tslib": "^1.9.3",
     "web-animations-js": "2.3.2",
     "webpack-war-plugin": "^1.0.0-beta.3",
-    "yarn": "1.17.3",
+    "yarn": "1.22.0",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
